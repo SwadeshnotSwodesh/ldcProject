@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+#page {
+    margin-top: 100px; /* Adjust based on the height of your header */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    transition: 1.5s;
+    z-index: 1000;
+    border-bottom: 13px solid #7a2582;
+}
+.logo {
+    float: left;
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+.center {
+    float: left;
+    margin-top: 30px;
+}
+.center h3 {
+    color: #55565a;
+}
+.text-animation {
+    font-size: 19px;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    animation: fadeInOut 3000ms infinite;
+}
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.topright {
+    float: right;
+    text-align: right;
+    color:  #386a83;
+    padding: 7px 17px;
+    font-size: 13px;
+}
+.topright p a {
+    text-decoration: none;
+    color: #7a2582;
+}
+.topright p a:hover {
+    text-decoration: underline;
+    color: #f9c910;
+}
+.social img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.social p {
+    font-size: 15px;
+    color: #386a83;
+    margin-top: -20px;
+}
+nav {
+    float: right;
+    margin: -3px -18px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 7px 13px;
+    border-right: 1px solid #fff;
+    color: #fff;
+    background: #044470;
+}
+.active a, nav ul li a:hover {
+    color: #044470;
+    background: #f9c910;
+}
+.clearfix {
+    clear: both;
+}
+.slider {
+    position: relative;
+     /* Adjust based on the height of your header */
+}
+.slider-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    z-index: 10;
+    text-align: center;
+    font-size: 100px; /* Adjust font size as needed */
+}
+.slider img {
+    height: 550px;
+    object-fit: cover;
+    width: 100%;
+}
+.bx-wrapper {
+    max-height: 550px; /* Match the height of the slider images */
+}
+.bx-wrapper .bx-prev, .bx-wrapper .bx-next {
+    z-index: 5; /* Ensure slider arrows stay above the slider but below captions */
+    bottom: 50%; /* Vertically center the arrows */
+    transform: translateY(50%);
+}
+.bx-wrapper .bx-pager {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+}
+
+.blue {
+    background-color: lightgray;
+}
+ 
+ .btn 
+ {
+    text-align: center;
+ }
+#about 
+{
+    text-align: center;
+    margin: 70px 100px;
+
+    
+}
+#about h5{
+    font-size: 50px;
+}
+#about h6
+{
+    font-size: 20px;
+    text-align: left;
+    margin: 20px;
+}
+
+#about1 {
+    display: flex;
+    justify-content: space-around; /* Distribute cards evenly with space around */
+    margin: 70px 90px;
+    
+}
+ 
+
+.card {
+    margin: 10px;
+    width: 18rem;
+}
+ 
+#events
+{
+    background-color: #044470;
+}
+
+ 
+.footer {
+    background-color: #0d2240;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    clear: both;
+}
