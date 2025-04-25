@@ -1,308 +1,482 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: "Montserrat", sans-serif;
-    margin: auto;
-   
-    
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
 }
-html,body {
-    scroll-behavior: smooth;
-    height: 100%;
-    width: 100%;
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
 }
 
-section
-{
-    margin: 0;
-    padding: 0;
+section {
+  margin: 0;
+  padding: 0;
 }
-#header-fixed{
-    margin-top: 100px; /* Adjust based on the height of your header */
-    display: flex;
-    flex-direction: column;
-   
+
+#header-fixed {
+  margin-top: 100px; /* Adjust based on the height of your header */
+  display: flex;
+  flex-direction: column;
 }
 .header {
-    position: fixed;
-    width: 100%;
-    background-color: #fff;
-    top: 0;
-    left: 0;
-    transition: 1.5s;
-    z-index: 1000;
-    border-bottom: 13px solid #7a2582;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  transition: 1.5s;
+  z-index: 1000;
+  border-bottom: 13px solid #7a2582;
 }
 .logo {
-    float: left;
+  float: left;
 }
 .logo img {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 .center {
-    float: left;
-    margin-top: 30px;
+  float: left;
+  margin-top: 30px;
+  color: #044470;
 }
- 
+
 .text-animation {
-    font-size: 19px;
-    font-family: 'Arial', sans-serif;
-    text-align: left;
-    animation: fadeInOut 3000ms infinite;
+  font-size: 19px;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+  animation: fadeInOut 3000ms infinite;
+  color: #000;
 }
 @keyframes fadeInOut {
-    0%, 100% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 .topright {
-    float: right;
-    text-align: right;
-    color:  #386a83;
-    padding: 7px 17px;
-    font-size: 13px;
+  float: right;
+  text-align: right;
+  color: #386a83;
+  padding: 7px 17px;
+  font-size: 13px;
 }
 .topright p a {
-    text-decoration: none;
-    color: #7a2582;
+  text-decoration: none;
+  color: #7a2582;
 }
 .topright p a:hover {
-    text-decoration: underline;
-    color: #f9c910;
+  text-decoration: underline;
+  color: #f9c910;
 }
 .social img {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 .social p {
-    font-size: 15px;
-    color: #386a83;
-    margin-top: -20px;
+  font-size: 15px;
+  color: #386a83;
+  margin-top: -20px;
 }
 nav {
-    float: right;
-    margin: -3px -18px;
+  float: right;
+  margin: -3px -18px;
 }
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 nav ul li {
-    float: left;
+  float: left;
 }
 nav ul li a {
-    text-decoration: none;
-    padding: 7px 13px;
-    border-right: 1px solid #fff;
-    color: #fff;
-    background: #044470;
+  text-decoration: none;
+  padding: 7px 13px;
+  border-right: 1px solid #fff;
+  color: #fff;
+  background: #044470;
 }
-.active a, nav ul li a:hover {
-    color: #044470;
-    background: goldenrod;
+.active a,
+nav ul li a:hover {
+  color: #044470;
+  background: goldenrod;
 }
 .clearfix {
-    clear: both;
+  clear: both;
 }
 #home .slider {
-    position: relative;
-    overflow: hidden;
-    min-height: 615px;
-    
+  position: relative;
+  overflow: hidden;
+  min-height: 615px;
 }
-  
+
 .slider-caption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 10px;
-    z-index: 10;
-    text-align: center;
-    font-size: 100px; /* Adjust font size as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  z-index: 10;
+  text-align: center;
+  font-size: 100px; /* Adjust font size as needed */
 }
 
 .slider img {
-    height: 615px;
-    object-fit: cover;
-    width: 100%;
-    display: block;
+  height: 615px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
 }
 .bx-wrapper {
-    max-height: 550px; /* Match the height of the slider images */
+  max-height: 550px; /* Match the height of the slider images */
 }
-.bx-wrapper .bx-prev, .bx-wrapper .bx-next {
-    z-index: 5; /* Ensure slider arrows stay above the slider but below captions */
-    bottom: 50%; /* Vertically center the arrows */
-    transform: translateY(50%);
+.bx-wrapper .bx-prev,
+.bx-wrapper .bx-next {
+  z-index: 5; /* Ensure slider arrows stay above the slider but below captions */
+  bottom: 50%; /* Vertically center the arrows */
+  transform: translateY(50%);
 }
 .bx-wrapper .bx-pager {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: auto;
-    text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
 }
 
-.blue {
-    background-color: lightgray;
+ .blue {
+  background-color: lightgray;
+  /*this is for the header section when scrolled*/
+} 
+
+.buttons {
+  padding: 50px 0;
 }
 
-.buttons
+.btn {
+  text-align: center;
+  color: #fff;
+}
+.btn a {
+  color: #000;
+}
+.btn a:hover {
+  text-decoration: none;
+}
+
+#about {
+  background-color: lightgray;
+  color: #000;
+  padding: 130px 0;
+}
+#about h1 {
+  text-align: center;
+}
+.card-collection {
+  display: flex;
+  justify-content: space-around;
+}
+#about .card {
+  margin: 10px;
+  width: 18rem;
+}
+.card-title {
+  color: goldenrod;
+}
+
+#events {
+  background-color: #ffffff;
+  color: #000;
+  padding: 130px 0;
+}
+
+#events .card {
+  margin: 10px;
+  width: 18rem;
+  background-color: #044470;
+}
+
+#events h1 {
+  text-align: center;
+}
+.events-prominent-collection {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+#events .card {
+  width: 100rem;
+}
+#events .events-collection ul li {
+  background-color: lightgray;
+}
+.events-collection {
+  display: flex;
+  justify-content: space-around;
+}
+
+#team {
+  background-color: #044470;
+  color: #fff;
+  padding: 130px 0;
+}
+#team h1 {
+  text-align: center;
+}
+.team-collection {
+  display: flex;
+  justify-content: space-around;
+}
+.team-collection1 {
+  display: flex;
+  justify-content: space-around;
+}
+#team .card {
+  margin: 10px;
+  width: 18rem;
+  background-color: #0d2240;
+}
+#team h4 {
+  color: goldenrod;
+}
+
+.fa-circle-icon {
+  background-color: #f0f0f0; /* Background color of the circle */
+  border-radius: 50%; /* Makes the background a circle */
+  padding: 10px; /* Adjusts the size of the circle */
+  text-align: center;
+  font-size: 30px; /*this is for the icons of the social medias*/
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 20px;
+  margin-left: 50px;
+}
+
+.fa-instagram {
+  margin-left: -3.5px;
+  margin-top: -13px;
+}
+
+.fa-facebook-f
 {
-
-    padding: 50px 0;
     
-}
- 
- .btn 
- {
-    text-align: center;
-    
- }
-#about
-{
-    background-color: lightgray;
-    color: #000;
-    padding: 130px 0;
-     
-}
-#about h1
-{
-    text-align: center;
-}
-.card-collection
-{
-    display: flex;
-    justify-content: space-around;
-}
- #about .card 
-{
-     margin: 10px;
-     width: 18rem;
-}
- 
-#events
-{
-    background-color: goldenrod;
-    color: #000;
-    padding: 130px 0;
-}
-#events .card
-{
-    margin: 10px;
-    width: 18rem;
-    background-color: #7a2582;
-}
-#events h1
-{
-    text-align: center;
-}
-.events-prominent-collection 
-{
-    display: flex;
-    justify-content: space-around;
-}
-#events .card 
-{
-    width: 100rem;
-}
-#events .events-collection ul li
-{
-    background-color: lightgray;
-}
-.events-collection
-{
-    display: flex;
-    justify-content: space-around;
-
-    
+    margin-top: -13px;
 }
 
-#team
-{
-    background-color: #044470;
-    color: #fff;
-    padding: 130px 0;
-     
+.fa-circle-icon:hover i {
+  text-decoration: none;
+  color: orange !important; /* Force purple color on hover */
 }
-#team h1
-{
-    text-align: center;
+
+#page-wrap {
+  background-color: #1e73be;
+  color: #000;
+  padding: 130px 0;
+  margin: 0px;
 }
-.team-collection
-{
-    display: flex;
-    justify-content: space-around;
+#page-wrap h1 {
+  text-align: center;
+  color: #fff;
 }
- #team .card 
-{
-     margin: 10px;
-     width: 18rem;
-     background-color: #0d2240;
-      
+.page-wrap-button {
+  padding-top: 60px;
+  text-align: center;
 }
-#team h4{
-    color: goldenrod;
+.bottom-left {
+  float: left;
 }
- 
-.page-wrap 
-{
-    background-color: #044470;
-    color: #000;
-    padding: 30px 0;
-    margin: 0px;
+.bottom-left img {
+  width: 300px;
+  height: 300px;
 }
-.bottom-left
-{
-    float: left;
+
+.bottom-right {
+  float: right;
 }
-.bottom-left img 
-{
-    width: 200px;
-    height: 200px;
+.bottom-right img {
+  margin-right: 20px;
+  margin-top: 15px;
+  width: 180px;
+  height: 180px;
 }
-.bottom-right
-{
-    float: right;
+
+.box1,
+.box2,
+.box3 {
+  background-color: #045296;
+  padding: 20px;
+  text-align: justify;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 550px;
+  margin-top: 50px;
 }
-.bottom-right img 
-{
-    margin-right: 20px;
-    margin-top: 30px;
-    width: 180px;
-    height: 180px;
+
+.box1 {
+  float: left;
+  padding-left: 20px;
+  margin-left: 30px;
+  box-sizing: border-box;
+  margin-right: 140px;
 }
- 
- 
- 
+.box1 strong em {
+  color: goldenrod;
+}
+
+.box2 {
+  float: auto;
+  padding-left: 20px;
+  margin-left: 30px;
+  box-sizing: border-box;
+  margin-right: 150px;
+}
+.box2 strong em {
+  color: goldenrod;
+}
+
+.box3 {
+  float: right;
+  padding-left: 20px;
+  margin-left: 30px;
+  box-sizing: border-box;
+  margin-right: 30px;
+}
+.box3 strong em {
+  color: goldenrod;
+}
+
 .footer {
-    background-color: #0d2240;
-    color: #fff;
-    font-size: 13px;
-    text-align: center;
-    padding: 17px 0;
-    position: relative;
-    clear: both;
+  background-color: #0d2240;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  padding: 17px 0;
+  position: relative;
+  clear: both;
 }
-.footer a
-{
-    text-decoration: none;
-    color: lightgray;
+.footer a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+/* from here donate section starts */
+.donate img {
+  height: 550px;
+  width: 550px;
+}
+.d-left {
+  float: left;
+  width: 40%;
+  padding-top: 30px;
+  border-right: 1px dotted #000;
+}
+.d-right {
+  float: right;
+  width: 55%;
+  padding-top: 100px;
+  padding-right: 50px;
+}
+.buttton a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*This is for the gallery section*/
+
+#gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+/* Fullscreen modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  flex-direction: column;
+}
+.modal img {
+  max-width: 90%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+/* Centered top control buttons */
+.modal .controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  z-index: 11;
+}
+.modal .controls span {
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px;
+}
+#gallery h1 {
+  margin: 50px;
+}
+#gallery button {
+  margin: 50px;
 }
